@@ -171,9 +171,30 @@ let eyeColor = {
 
 
 
-for(let i = 0; i < starWarsCharacters.length; i++)
+for(let i = 0; i < starWarsCharacters.length; i++){
+
+  switch (starWarsCharacters[i].eye_color){
+    case 'blue':
+      eyeColor.blue.push(starWarsCharacters[i]);
+      break;
+    case 'yellow':
+      eyeColor.yellow.push(starWarsCharacters[i]);
+    break
+    case 'brown':
+        eyeColor.brown.push(starWarsCharacters[i]);
+    break
+    case 'red':
+      eyeColor.red.push(starWarsCharacters[i])
+      break
+    case 'blue-gray':
+      eyeColor["blue-gray"].push(starWarsCharacters[i])
+    break
+  }
 
 
+}
+
+console.log(eyeColor)
 
 
 
@@ -184,6 +205,20 @@ for(let i = 0; i < starWarsCharacters.length; i++)
 /* ESERCIZIO 6
   Usa un while loop per calcolare la massa totale dell'equipaggio. Salvala in una variabile chiamata "crewMass".
 */
+
+let crewMass = 0;
+i = 0;
+
+while (i < starWarsCharacters.length){
+  crewMass += starWarsCharacters[i].mass;
+  i++
+}
+
+console.log(crewMass)
+
+
+
+
 
 /* ESERCIZIO 7
   Crea uno if/else statement per rivelare la tipologia di carico, utilizzando la massa totale, di un'ipotetica astronave contenente i personaggi dell'array "starWarsCharacters".
@@ -197,9 +232,50 @@ for(let i = 0; i < starWarsCharacters.length; i++)
   Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se riesci ad ottenere un messaggio diverso.
 */
 
+
+if(crewMass < 500){
+  console.log("Ship is under loaded")
+}else if(crewMass < 700){
+  console.log("Ship is half loaded")
+}else if(crewMass < 900){
+  console.log("warning: Load is over 700")
+}else if(crewMass <1000){
+  console.log("Critical load over 900")
+}else{
+  console.log("DANGER ! OVERLOAD: escape from ship now !!!")
+}
+
+
+
+
+
+
+
+
+
+
 /* ESERCIZIO 8
   Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi effettuare la riassegnazione del valore corrispondente o creare un nuovo array)
 */
+
+
+let nuovoArray = []
+
+for(i = 0; i < starWarsCharacters.length; i++){
+let charatecrCopy = {... starWarsCharacters[i]}
+
+if(charatecrCopy.gender === "n/a"){
+  charatecrCopy.gender = "robot"
+}
+nuovoArray.push(charatecrCopy)
+
+
+}
+
+console.log(nuovoArray)
+
+
+
 
 /* --EXTRA-- ESERCIZIO 9
   Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "charactersNames" le stringhe corrispondenti a personaggi con lo stesso nome.
