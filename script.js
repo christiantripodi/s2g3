@@ -306,7 +306,7 @@ nuovoStar = starWarsCharacters[num]
 
 
 
-console.log("Il personaggio scelto è ", nuovoStar.name, "il suo peso è ", nuovoStar.height, "ed il suo peso è ", nuovoStar.mass, "i suoi capelli sono color ", nuovoStar.hair_color, "ha la pelle :", nuovoStar.skin_color, "i suoi occhi sono color ", eyeColor, "il suo anno di nascita è: ", nuovoStar.birth_year, "e per finire il suo genere è:", nuovoStar.gender)
+console.log("Il personaggio scelto è ", nuovoStar.name, "il suo peso è ", nuovoStar.height, "ed il suo peso è ", nuovoStar.mass, "i suoi capelli sono color ", nuovoStar.hair_color, "ha la pelle :", nuovoStar.skin_color, "i suoi occhi sono color ", nuovoStar.eye_color, "il suo anno di nascita è: ", nuovoStar.birth_year, "e per finire il suo genere è:", nuovoStar.gender)
 
 
 
