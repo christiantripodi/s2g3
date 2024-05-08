@@ -291,3 +291,25 @@ console.log(nuovoArray)
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
+
+
+let num = Math.floor(Math.random()*10);
+
+console.log("il personaggio scelto è il numero: ", num)
+
+// console.log("il personaggio scelto è il num: ", starWarsCharacters[num])
+
+
+
+nuovoStar = starWarsCharacters[num]
+
+
+
+
+console.log("Il personaggio scelto è ", nuovoStar.name, "il suo peso è ", nuovoStar.height, "ed il suo peso è ", nuovoStar.mass, "i suoi capelli sono color ", nuovoStar.hair_color, "ha la pelle :", nuovoStar.skin_color, "i suoi occhi sono color ", eyeColor, "il suo anno di nascita è: ", nuovoStar.birth_year, "e per finire il suo genere è:", nuovoStar.gender)
+
+
+
+
+
+
